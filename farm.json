@@ -1,0 +1,25 @@
+{
+  "farm_id": 68,
+  "name": "cerebron-farm-68-autonomous-experiment-orchestrator",
+  "domain": "autonomous-experiment-orchestrator",
+  "status": "SCAFFOLDED",
+  "protocol": "SPIRALIX-OMEGA",
+  "capabilities": [
+    "experiment-orchestration",
+    "closed-loop-task-routing",
+    "anti-redundancy"
+  ],
+  "evidence_ceiling": "E2-before-real-experiment",
+  "kernel": "dmaillot95-ui/cerebron-omega-ai",
+  "shared_modules": [
+    "RD-MISSION-COMPILER-OMEGA",
+    "ANTI-REDUNDANCY-SCHEDULER-OMEGA",
+    "MICRO-IMPULSE-OMEGA",
+    "PIPELINE-INTEGRATION-OMEGA"
+  ],
+  "rules": [
+    "WORKFLOW_SUCCESS!=SCIENTIFIC_PROGRESS",
+    "COMPUTATION!=PROOF",
+    "VERIFY_BEFORE_COMMIT"
+  ]
+}
